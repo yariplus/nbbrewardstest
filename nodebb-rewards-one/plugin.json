@@ -1,0 +1,14 @@
+{
+	"id": "nodebb-rewards-one",
+	"name": "nodebb-rewards-one",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:rewards.conditionals", "method": "getConditionals" },
+		{ "hook": "filter:rewards.conditions",   "method": "getConditions" },
+		{ "hook": "filter:rewards.rewards",      "method": "getRewards" },
+
+		{ "hook": "action:rewards.award:test/award-one", "method": "giveAward" },
+
+		{ "hook": "filter:rewards.checkConditional:greaterthan", "method": "greaterthan" }
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"id": "nodebb-rewards-two",
+	"name": "nodebb-rewards-two",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:rewards.rewards", "method": "getRewards" }
+	]
+}
